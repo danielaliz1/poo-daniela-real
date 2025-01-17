@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class CLI {
     public static void ShowMenu() {
-        System.out.println("1.Crear un nuevo estudiante");
-        System.out.println("2. Listar estudiantes");
+        System.out.println("1. Agregar carro al catalogo");
+        System.out.println("2. Mostrar catalogo");
         System.out.println("3. Salir"); 
 
     
@@ -27,7 +27,7 @@ public class CLI {
     }
 }
 
-public static void Chilaquil()
+public static void runApp()
 {
     ShowMenu();
     Scanner scanner = new Scanner(System.in);
@@ -41,11 +41,13 @@ public static void Chilaquil()
             System.out.println("Listar estudiantes");
                 break;
             default:
-            System.out.println("Opción invañida");
+            System.out.println("Opción invalida");
                 break;
         }        
         ShowMenu();
         opcion = scanner.nextInt();
     }
 }
+
+
 }
