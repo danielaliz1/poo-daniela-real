@@ -1,7 +1,7 @@
 package edu.daniela.real.actividades.actividad1.models;
 
 public class Car {
-    private String modelo;
+    private String modelo_año;
 
     private String marca;
 
@@ -9,20 +9,26 @@ public class Car {
 
     private String color;
 
+/**
+ * 
+ * @return Car Regresa los datos sobre el coche
+ * 
+ * 
+ */
 
     @Override
     public String toString() {
         return "Car{" +
-                "modelo='" + modelo + '\'' +
+                "modelo='" + modelo_año + '\'' +
                 ", marca='" + marca + '\'' + 
                 ", numeroLlantas=" + numLlantas +
                 ", color=" + color + '\'' + 
                 '}';
     }
 
-    public Car(String modelo, String marca, int numeroLlantas, String color){
-        this.modelo = modelo;
-        this. marca = marca;
+    public Car(String modelo_año, String marca, int numeroLlantas, String color){
+        this.modelo_año = modelo_año;
+        this.marca = marca;
         this.color = color;
         setNumeroLlantas(numeroLlantas);
     }
@@ -30,8 +36,10 @@ public class Car {
     public int getNumeroLlantas(){return numLlantas; }
 
     /**
-     * 
-     * 
+     * @return modelo Regresa el modelo del coche
+     * @return marca Regresa el modelo del coche
+     * @return color Regresa el modelo del coche
+     * @throws numero de llantas Excepción en el numero de llantas disponible
      */
 
      public void setNumeroLlantas(int numeroLlantas) {
@@ -43,11 +51,11 @@ public class Car {
      }
 
      public String getModelo(){
-        return modelo;
+        return modelo_año;
      }
 
      public void SetModelo (String modelo){
-        this.modelo = modelo;
+        this.modelo_año = modelo;
      }
 
      public String getMarca(){
@@ -66,7 +74,3 @@ public class Car {
         this.color = color;
      }
 }
-
-
-
-
