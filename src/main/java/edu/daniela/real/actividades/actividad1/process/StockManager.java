@@ -11,15 +11,15 @@ ArrayList<Car> stock;
 public StockManager(){this.stock = new ArrayList<>();}
 
 /**
- * @param modelo El año de produccion del auto
+ * @param modelo_año El año de produccion del auto
  * @param marca Empresa productora del auto
  * @param numeroLlantas Cantidad de llantas del coche
  * @param color Blanco, gris y rojo
- * 
+ * @param addCar Pide los datos del auto con sus respectivos parametros
  */
 
-public void addCar(String modelo, String marca, int numeroLlantas, String color){
-    Car car= new Car(modelo, marca, numeroLlantas, color);
+public void addCar(String modelo_año, String marca, int numeroLlantas, String color){
+    Car car= new Car(modelo_año, marca, numeroLlantas, color);
     stock.add(car);
 
 

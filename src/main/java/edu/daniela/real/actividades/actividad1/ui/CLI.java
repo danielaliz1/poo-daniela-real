@@ -8,7 +8,8 @@ import java.util.Scanner;
 
 /**
  * 
- * @param 
+ * @param scanner Captura los datos sobre el carro
+ * 
  */
 
 public class CLI {
@@ -16,20 +17,20 @@ public class CLI {
         Scanner scanner = new Scanner(System.in);
         StockManager stockmanager = new StockManager();
         showMenu();
-        int opcion = scanner.nextInt();scanner.nextLine();
+        int opcion_menu = scanner.nextInt();scanner.nextLine();
 
-        while (opcion !=3) {
-            switch (opcion) {
+        while (opcion_menu !=3) {
+            switch (opcion_menu) {
                 case 1:
                     System.out.println("Introduce el número de llantas ");
                     int numLlantas = scanner.nextInt();scanner.nextLine();
                     System.out.println("Introduce el color");
                     String color =scanner.nextLine();
-                    System.out.println("Introduce el modelo");
-                    String modelo =scanner.nextLine();
+                    System.out.println("Introduce el año del modelo");
+                    String modelo_año =scanner.nextLine();
                     System.out.println("Introduce el marca");
                     String marca =scanner.nextLine();
-                    stockmanager.addCar(modelo,marca,numLlantas,color);
+                    stockmanager.addCar(modelo_año,marca,numLlantas,color);
                     break;
                 case 2: 
                     int auto=1;
@@ -47,7 +48,7 @@ public class CLI {
                     
             }
             showMenu();
-            opcion = scanner.nextInt();
+            opcion_menu = scanner.nextInt();
         }
     }
 
