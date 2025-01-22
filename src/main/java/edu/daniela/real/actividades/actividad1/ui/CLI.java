@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  * 
- * @param scanner Captura los datos sobre el carro
+ * @param scanner Captura los datos sobre el carro.
  * 
  */
 
@@ -56,7 +56,7 @@ public class CLI {
     public static void showMenu(){
         System.out.println("Menu");
         System.out.println("1. Agregar Carro al catalogo");
-        System.out.println("2. Mostrar catalogo");
+        System.out.println("2. Mostrar el catalogo");
         System.out.println("3. Salir");
     }
 
